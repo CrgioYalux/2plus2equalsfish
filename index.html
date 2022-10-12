@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Clase 14</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Calculadora</h1>
+    <main class="container">
+      <div class="container operands_container">
+        <label for="first_number">
+          <span>Ingrese el primer operando</span>
+          <input type="text" name="first_number" id="first_number" value="0">
+        </label>
+        <label for="second_number">
+          <span>Ingrese el segundo operando</span>
+          <input type="text" name="second_number" id="second_number" value="0">
+        </label>
+      </div>
+      <div class="container operators_container">
+        <label for="add_op">
+          <input type="radio" name="operator" id="add_op" value="+" checked>
+          <span>+</span>
+        </label>
+        <label for="subtract_op">
+          <input type="radio" name="operator" id="subtract_op" value="-">
+          <span>-</span>
+        </label>
+        <label for="multiply_op">
+          <input type="radio" name="operator" id="multiply_op" value="x">
+          <span>x</span>
+        </label>
+        <label for="divide_op">
+          <input type="radio" name="operator" id="divide_op" value="/">
+          <span>/</span>
+        </label>
+      </div>
+      <div class="container results_container">
+        <label for="result">
+          <span>El resultado es</span>
+          <input type="text" name="result" id="result" value="0" disabled>
+        </label>
+      </div>
+    </main>
+    <script src="./script.js"></script> 
+  </body>
+</html>
